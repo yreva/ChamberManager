@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ChIMS_v2_FILE C:/Users/AD/Documents/ChamberManager/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/ChIMS_v2.exe)
+set(__QT_DEPLOY_TARGET_ChIMS_v2_RUNTIME_DLLS C:/Qt/6.7.0/mingw_64/bin/Qt6Charts.dll;C:/Qt/6.7.0/mingw_64/bin/Qt6Network.dll;C:/Qt/6.7.0/mingw_64/bin/Qt6SerialPort.dll;C:/Qt/6.7.0/mingw_64/bin/Qt6OpenGLWidgets.dll;C:/Qt/6.7.0/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.7.0/mingw_64/bin/Qt6OpenGL.dll;C:/Qt/6.7.0/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.7.0/mingw_64/bin/Qt6Core.dll)

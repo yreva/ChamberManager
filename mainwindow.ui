@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QChartView" name="NOy_ChartView" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>821</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>821</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Experiment Details</string>
+    </property>
+    <widget class="QPushButton" name="startExperiment_button">
+     <property name="geometry">
+      <rect>
+       <x>699</x>
+       <y>40</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Start Recording</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="instrumentUser">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>131</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="experimentName">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>50</y>
+       <width>371</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Instrument User</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>30</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Experiment Name</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcdClock">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>30</y>
+       <width>131</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="digitCount">
+      <number>8</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QDial" name="dial_2">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>630</y>
+      <width>50</width>
+      <height>64</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QChartView" name="Gases_ChartView" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>821</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>0</y>
+      <width>141</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Current Data</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>19</y>
+       <width>141</width>
+       <height>601</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Humidity (%)</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="RH_label">
+        <property name="styleSheet">
+         <string notr="true">color:rgb(0,0,255);
+font: 600 18pt &quot;Segoe UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>40</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_14">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Temperature (C)</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="T_label">
+        <property name="styleSheet">
+         <string notr="true">font: 600 18pt &quot;Segoe UI&quot;; color:rgb(255, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>25.1</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>O3 (ppb)</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="O3_label">
+        <property name="styleSheet">
+         <string notr="true">font: 600 18pt &quot;Segoe UI&quot;; color:rgb(0, 200, 0);</string>
+        </property>
+        <property name="text">
+         <string>20.00</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>NO (ppb)</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="NO_label">
+        <property name="styleSheet">
+         <string notr="true">font: 600 18pt &quot;Segoe UI&quot;; color:rgb(255, 170, 0);</string>
+        </property>
+        <property name="text">
+         <string>0.000</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_16">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>NOy (ppb)</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="NOy_label">
+        <property name="styleSheet">
+         <string notr="true">font: 600 18pt &quot;Segoe UI&quot;; color:rgb(140,70, 70);</string>
+        </property>
+        <property name="text">
+         <string>0.000</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>DIFF (ppb)</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="DIFF_label">
+        <property name="styleSheet">
+         <string notr="true">font: 600 18pt &quot;Segoe UI&quot;; color: rgb(85, 85, 255);</string>
+        </property>
+        <property name="text">
+         <string>0.000</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 900 11pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>Lights</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">font: 900 14pt &quot;Segoe UI&quot; rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>off</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QDial" name="dial_3">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>630</y>
+      <width>50</width>
+      <height>64</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDial" name="dial">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>630</y>
+      <width>50</width>
+      <height>64</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1006</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionO3_IP_Address"/>
+    <addaction name="actionNOy_IP_Address"/>
+    <addaction name="actionRH_T_COM_port"/>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionO3_IP_Address">
+   <property name="text">
+    <string>O3 IP Address</string>
+   </property>
+  </action>
+  <action name="actionNOy_IP_Address">
+   <property name="text">
+    <string>NOy IP Address</string>
+   </property>
+  </action>
+  <action name="actionRH_T_COM_port">
+   <property name="text">
+    <string>RH/T COM port</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
