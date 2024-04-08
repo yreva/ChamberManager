@@ -16,3 +16,5 @@ Chamber Manager is a robust, user-friendly software designed to streamline the p
 ## Getting Started
 
 To run the compiled version of the software, no additional installations are required. The compiled version is located on the SMSP computer in the lab.
+
+![image](https://github.com/yreva/ChamberManager/assets/34600666/3c83ea5d-4069-469c-8bc7-84758a794605)
